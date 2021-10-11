@@ -349,6 +349,18 @@
                         <use href="./images/symbol-defs.svg#icon-close-black"></use>
                     </svg>
                 </button>
+                <b class="modal-text">Оставьте свои данные, мы вам перезвоним</b>
+                <form  class="customer-data" autocomplete="on">
+                    <label class="customer-data-label" for="customer-name">Имя</label>
+                    <input type="text" name="customer-name" id="customer-name" class="customer-data-input">
+                    <label class="customer-data-label" for="customer-tel">Телефон</label>
+                    <input type="tel" name="customer-tel" id="customer-tel" class="customer-data-input">
+                    <label class="customer-data-label" for="customer-mail">Почта</label>
+                    <input type="email" name="customer-mail" id="customer-mail" class="customer-data-input">
+                    <label class="customer-data-label" for="customer-comment">Коментарий</label>
+                    <input type="textarea" name="customer-comment" id="customer-comment" class="customer-data-text" placeholder="Введите текст">
+                    <button type="submit" class="customer-data-btn">Отправить</button>
+                </form>
             </div>
         </div>
     <script src="./js/modal.js"></script>
