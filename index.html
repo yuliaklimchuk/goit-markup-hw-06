@@ -44,7 +44,7 @@
             <section class="hero">
                 <div class="container">
                     <h1 class="hero-title">Ефективные решения для вашего бизнеса</h1>
-                    <button class="hero-btn" data-modal-open type="button">Заказать услугу</button>
+                    <button class="hero-btn btn" data-modal-open type="button">Заказать услугу</button>
                 </div>
                 </section>
             <section class="benefits section">
@@ -231,7 +231,7 @@
                                     </a>
                                 </li>
                                 <li class="social-item">
-                                    <a class="social-list-link" href="">
+                                    <a class="social-list-link " href="">
                                         <svg class="social-icon">
                                             <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                                         </svg>
@@ -339,6 +339,18 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="footer-form-box">
+                        <b class="footer-text">Подпишитесь на рассылку</b>
+                        <form class="footer-form">
+                            <input type="email" name="footer-email" class="footer-email" placeholder="E-mail">
+                            <button type="submit" class="footer-btn btn">
+                                Подписаться
+                                <svg class="footer-btn-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-send"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </footer>
@@ -350,16 +362,43 @@
                     </svg>
                 </button>
                 <b class="modal-text">Оставьте свои данные, мы вам перезвоним</b>
-                <form  class="customer-data" autocomplete="on">
-                    <label class="customer-data-label" for="customer-name">Имя</label>
-                    <input type="text" name="customer-name" id="customer-name" class="customer-data-input">
-                    <label class="customer-data-label" for="customer-tel">Телефон</label>
-                    <input type="tel" name="customer-tel" id="customer-tel" class="customer-data-input">
-                    <label class="customer-data-label" for="customer-mail">Почта</label>
-                    <input type="email" name="customer-mail" id="customer-mail" class="customer-data-input">
-                    <label class="customer-data-label" for="customer-comment">Коментарий</label>
-                    <input type="textarea" name="customer-comment" id="customer-comment" class="customer-data-text" placeholder="Введите текст">
-                    <button type="submit" class="customer-data-btn">Отправить</button>
+                <form  class="customer-data-form" >
+                    <div class="form-field">                    
+                        <label class="customer-data-label">
+                            Имя
+                            <input type="text" name="customer-name"  class="customer-data-input customer-auth"> 
+                            <svg class="modal-icon" width="12" height="12">
+                                <use href="./images/icons.svg#icon-human" ></use>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="form-field">
+                        <label class="customer-data-label" >
+                            Телефон
+                            <input type="tel" name="customer-tel" class="customer-data-input customer-auth">
+                            <svg class="modal-icon" width="13" height="13">
+                                <use href="./images/icons.svg#icon-tel" ></use>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="form-field">
+                        <label class="customer-data-label" >
+                            Почта
+                            <input type="email" name="customer-mail" class="customer-data-input customer-auth">
+                            <svg class="modal-icon" width="15" height="12">
+                                <use href="./images/icons.svg#icon-mail" ></use>
+                            </svg>
+                        </label>
+                    </div>
+                    <label class="customer-data-label" >
+                        Коментарий  
+                        <textarea name="customer-comment"  class="customer-data-input customer-comment" placeholder="Введите текст"></textarea>
+                    </label>
+                    <label class="customer-chek-label">
+                        <input type="checkbox" name="customer-chek" class="customer-chek">
+                        Соглашаюсь с рассылкой и принимаю <a href="#" class="customer-chek-link">Условия договора</a>
+                    </label>
+                    <button type="submit" class="customer-data-btn btn">Отправить</button>  
                 </form>
             </div>
         </div>
