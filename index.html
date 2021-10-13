@@ -366,37 +366,48 @@
                     <div class="form-field">                    
                         <label class="customer-data-label">
                             Имя
-                            <input type="text" name="customer-name"  class="customer-data-input customer-auth"> 
-                            <svg class="modal-icon" width="12" height="12">
-                                <use href="./images/icons.svg#icon-human" ></use>
-                            </svg>
+                            <span class="input-wraper">
+                                <input type="text" name="customer-name"  class="customer-data-input customer-auth"> 
+                                <svg class="modal-icon" width="12" height="12">
+                                    <use href="./images/icons.svg#icon-human" ></use>
+                                </svg>
+                            </span>
                         </label>
                     </div>
                     <div class="form-field">
                         <label class="customer-data-label" >
                             Телефон
-                            <input type="tel" name="customer-tel" class="customer-data-input customer-auth">
-                            <svg class="modal-icon" width="13" height="13">
-                                <use href="./images/icons.svg#icon-tel" ></use>
-                            </svg>
+                            <span class="input-wraper">
+                                <input type="tel" name="customer-tel" class="customer-data-input customer-auth">
+                                <svg class="modal-icon" width="13" height="13">
+                                    <use href="./images/icons.svg#icon-tel" ></use>
+                                </svg>
+                            </span>
                         </label>
                     </div>
                     <div class="form-field">
                         <label class="customer-data-label" >
                             Почта
-                            <input type="email" name="customer-mail" class="customer-data-input customer-auth">
-                            <svg class="modal-icon" width="15" height="12">
-                                <use href="./images/icons.svg#icon-mail" ></use>
-                            </svg>
+                            <span class="input-wraper">
+                                <input type="email" name="customer-mail" class="customer-data-input customer-auth">
+                                <svg class="modal-icon" width="15" height="12">
+                                    <use href="./images/icons.svg#icon-mail" ></use>
+                                </svg>
+                            </span>
                         </label>
                     </div>
                     <label class="customer-data-label" >
                         Коментарий  
                         <textarea name="customer-comment"  class="customer-data-input customer-comment" placeholder="Введите текст"></textarea>
                     </label>
-                    <label class="customer-chek-label">
-                        <input type="checkbox" name="customer-chek" class="customer-chek">
-                        Соглашаюсь с рассылкой и принимаю <a href="#" class="customer-chek-link">Условия договора</a>
+                    <label class="customer-check-label">
+                        <input type="checkbox" name="customer-check" class="customer-check visually-hidden ">
+                        <span class="check-icon-wrap">
+                            <svg class="check-icon" width="11" height="8">
+                                <use href="./images/icons.svg#icon-check" ></use>
+                            </svg>
+                        </span>
+                        Соглашаюсь с рассылкой и принимаю <a href="#" class="customer-check-link">Условия договора</a>
                     </label>
                     <button type="submit" class="customer-data-btn btn">Отправить</button>  
                 </form>

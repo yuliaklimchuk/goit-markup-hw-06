@@ -539,12 +539,14 @@ body
 {
     width: 358px;
     height: 50px;   
+    outline: none;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     margin-right: 12px;
     background-color: rgba(255, 255, 255, 0);
     padding-left: 16px;
+    padding-right: 15px;
 }
 .footer-email::placeholder
 {
@@ -698,6 +700,7 @@ body
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    padding: 40px;
     position: relative;
     transform: scale(1);
     transition: transform 250ms var(--timing-function);
@@ -730,26 +733,31 @@ body
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
     display: block;
 }
 .form-field
 {
-    position: relative;
     margin-bottom: 10px;
+}
+.input-wraper
+{
+    position: relative;
+    margin-top: 4px;
 }
 .modal-icon
 {
     position: absolute;
-    top: 55%;
     left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .customer-data-input
 {
     width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    margin-top: 4px;
+    padding-right: 15px;
     transition: border 250ms var(--timing-function), border-radius 250ms var(--timing-function) ;
 }
 .customer-data-input:hover,
@@ -776,6 +784,7 @@ outline: none;
     padding-left: 16px;
     padding-top: 12px;
     margin-bottom: 20px;
+    resize: none;
 
 
 }
@@ -795,7 +804,7 @@ outline: none;
     letter-spacing: 0.01em; 
     color: #757575;
 }
-.customer-chek-label
+.customer-check-label
 {
     font-size: 14px;
     line-height: 1.71;
@@ -804,17 +813,38 @@ outline: none;
     display: block;
     margin: 0 auto;
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.customer-chek-link
+.customer-check-link
 {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--secondary-text-color)
+    color: var(--secondary-text-color);
+    display: inline-block;
+    margin-left: 5px;
 }
-.customer-chek
+.customer-check
 {
     margin-right: 9px;
+}
+.check-icon-wrap
+{
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7px;
+}
+.customer-check:checked + .check-icon-wrap
+{
+    background-color: var(--secondary-text-color);
+    border: none;
 }
 .customer-data-btn
 {
