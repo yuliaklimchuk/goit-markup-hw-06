@@ -840,6 +840,7 @@ outline: none;
     align-items: center;
     justify-content: center;
     margin-right: 7px;
+    transition: background-color 250ms var(--timing-function);
 }
 .customer-check:checked + .check-icon-wrap
 {
