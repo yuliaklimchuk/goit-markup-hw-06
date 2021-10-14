@@ -717,12 +717,20 @@ body
     position: absolute;
     top: 8px;
     right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: fill 250ms var(--timing-function);
 }
-
+.close-btn:hover,
+.close-btn:focus
+{
+    fill: var(--secondary-text-color);
+}
 .close-icon
 {
-    width: 11px;
-    height: 11px;
+    width: 18px;
+    height: 18px;
 }
 
 .modal-text
